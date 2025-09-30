@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class Reverse_Number {
+public class Sum_Of_First_Natural_Numbers {
     public static void main(String[]args){
         Scanner scn = new Scanner(System.in);
-        System.out.print("Enter the number:");
         int n = scn.nextInt();
-        
-        for(int i=n;i>0;i--){
-            System.out.println(i);
+        int sum = 0;
+        for(int i=1;i<=n;i++){
+            sum = sum +i;
         }
+        System.out.println(sum);
     }
     
 }
